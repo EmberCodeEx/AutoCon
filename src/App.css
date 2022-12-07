@@ -1,0 +1,172 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.split-flex {
+  display: flex;
+  flex-direction: row;
+ 
+}
+.gutter.gutter-horizontal {
+  cursor: ew-resize;
+}
+
+
+.intro-wrapper{
+	background-color: var(--secondaryColor);
+	border:1px solid var(--borderColor);
+	border-radius:5px 5px 0 0;
+
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		'nav-wrapper nav-wrapper'
+		'left-column right-column'
+	;
+    /* padding-bottom: 100%; */
+}
+
+.dots-wrapper{
+	display: flex;
+	padding: 10px;
+}
+
+
+.browser-dot{
+	background-color: black;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin: 5px;
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+}
+
+#dot-1{
+	background-color:  #FC6058;
+}
+
+#dot-2{
+	background-color:  #FEC02F;
+}
+
+#dot-3{
+	background-color:  #2ACA3E;
+}
+
+h2 {
+  text-align: center;
+  color: #c9c5c5;
+}
+/* Split the screen in half */
+.split {
+	margin-top: 10%;
+	height: 90%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+  padding-right: 50px;
+	/* margin-bottom: 100%; */
+  }
+  
+  /* Control the left side */
+  .left {
+	left: 0;
+  /* padding-top: 5%;  */
+  padding-right: 50px;
+  background-color: #0f224b;
+  }
+  
+  /* Control the right side */
+  .right {
+	right: 0;
+	background-color: white;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+	width: 150px;
+	border-radius: 50%;
+  }
+
+  .code{
+	margin-bottom: 100px;
+  }
+
+
+  body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #928f99;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 100%;
+  position:relative;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+.logo{ 
+  width: 100px;
+  height: 100px;
+}
